@@ -5,7 +5,7 @@
 	$type2= $_POST['type2'];
 	$gen= $_POST['gen'];
 	$leg= $_POST['leg'];
-	$con=mysqli_connect("localhost","root","","pokelist");
+	$con=mysqli_connect("35.233.11.254","root","admin","Pokemon");
 	mysqli_query($con,"UPDATE `pokelist` SET Name = '$name', Type1 = '$type1', Type2 = '$type2', Generation = '$gen', Legendary = '$leg' WHERE Number = '$num' ");
 	$records=mysqli_query($con,"SELECT * from `pokelist` WHERE Number = '$num' ");
 	//header("location:myfriend.php");
