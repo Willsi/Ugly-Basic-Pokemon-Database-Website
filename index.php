@@ -1,6 +1,6 @@
 <html>
 <?php
-	$con=mysqli_connect("localhost","root","","pokelist");
+	$con=mysqli_connect("35.233.11.254","root","admin","Pokemon");
 	$records=mysqli_query($con,"select * from pokelist");
 		echo "<table border='1'>";
 
